@@ -1,0 +1,129 @@
+.fisiquant{
+    display: flex;
+    justify-content: center; 
+    color: #f85904;
+    font-size: 35px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+.explore{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:<weight>;
+    font-style: normal;
+    text-align: center;
+}
+
+.atomo, img{
+    top: -10%;
+    position: relative;
+    left: 0;
+    margin: auto;
+    bottom: 0;
+    right: 0;
+    align-items: center;
+    display: flex;
+    animation: float 3s ease-in-out infinite;
+}
+@keyframes float{
+    0%, 100%{
+        transform: translateY(0);
+
+    }
+    50%{
+        transform: translateY(-50px);
+    }
+}
+.texto2{
+    top: -15%;
+    color: white;
+    position: relative;
+    background-color: #03031b;
+    border-radius: 15px;
+    text-align: center;
+    justify-content: center;
+    width: 700px;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+
+}
+.oque{
+    list-style-type: none;
+    border: none;
+    border-radius: 15px;
+    width: 250px;
+    height: 250px;
+    background-color: #3391fd;
+    color: antiquewhite;
+}
+.grip{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 300px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .botão{
+      background: #0ff;
+      border-radius: 16px;
+      padding: 20px;
+      cursor: pointer;
+      font-size: 22px;
+      margin: 10px 0;
+    width: 200px;
+      height: 200px;   
+    }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vw;
+    background: #040352;
+}
+.container{
+    position: relative;
+    width: 100vw;
+    height: 100vw;
+    overflow: hidden;
+}
+.bolhas{
+    position: absolute;
+    display: flex;
+}
+.bolhas span { width: 30px;
+    height: 30px;
+    background: #ffb61a;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #ffb61a44, 
+     0 0  50px #ffb61a,
+     0 0  100px #ffb61a;;
+     animation: animar calc(120s / var(--i)) linear infinite;
+}
+@keyframes animar{
+    0%{
+        transform: translateY(100vw) scale(0);
+    }
+    100%{
+         transform: translateY(-10vw) scale(1);
+    }
+}
+
+.bolhas span:nth-of-type(even){
+    background: #faea57;
+    box-shadow: 0 0 0 10px #faea5744, 
+     0 0  50px #faea57,
+     0 0  100px #faea57;
+}

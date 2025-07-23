@@ -1,0 +1,32 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vw;
+    background: ;
+}
+.oque{
+    color: rgb(233, 86, 13);
+    justify-content: center;
+    display: flex;
+    font-size: 30px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+.retangu1{
+    width: 500px;
+    height: 500px;
+    background: #f5f05a;
+    border-radius: 15px;
+    display: flex;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    justify-content: center;
+
+}
